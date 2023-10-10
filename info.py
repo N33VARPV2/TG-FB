@@ -36,16 +36,16 @@ auth_channel = environ.get('AUTH_CHANNEL', "-1001840670322")
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1004048014685')
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1001918572649')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1001922210580')
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1001922530382')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://moviescheckpoints:1@cluster0.rd7llap.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://vk3714414:vk3714414@cluster0.5lchulh.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0") #don't change the name if you are using the database already
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Cluster0')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
