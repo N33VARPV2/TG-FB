@@ -45,12 +45,12 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://vk3714414:vk3714414@cluster0.5lchulh.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0") #don't change the name if you are using the database already
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'ziplinker.net')
-SHORTLINK_API = environ.get('SHORTLINK_API', '5b343a256452228dae2eb40201f9e8a64583357f')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'atglinks.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'f6e124b4e5eedfaaa243f03712a76919bf9b1f67')
 SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', '')
 SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', '')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
@@ -58,9 +58,9 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "12")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Movies_Checkpoint_Group')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/BichuHub')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+AKANipq4DHhkYjk9')#not added
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+mXrs3YeOSD1lYjI1')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MoviesDuniya4U')
+TUTORIAL = environ.get('TUTORIAL', 'httpa://t.me/MoviesDuniya4U')#not added
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001757784655'))
